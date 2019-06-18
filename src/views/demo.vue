@@ -155,7 +155,7 @@
       height: 89vh
       margin-top: 11vh
       .experience-content
-        height: calc(89vh - 100px - 8vh)
+        height: calc(94vh - 100px - 8vh)
         .experience-item
           padding: 4vh 0 4vh 8vw
           .item-index

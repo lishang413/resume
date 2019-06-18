@@ -5,13 +5,6 @@
        @touchend="touchEnd"
   >
     <transition-group :name="menuSlide" tag="div" class="main">
-      <!--<projects :projects="resumeData.projects"-->
-                <!--:has-sizes="hasSizes"-->
-                <!--key="projects"-->
-                <!--:slideIn="slideIn"-->
-                <!--v-if="selectedMenu===0"-->
-                <!--@show-project="showProject"-->
-      <!--&gt;</projects>-->
       <demo :experiences="resumeData.demo"
             key="experience"
             v-if="selectedMenu===0"
@@ -88,122 +81,6 @@ export default {
           {
             chi: '联系',
             eng: 'CONTACT'
-          }
-        ],
-        projects: [
-          {
-            title: '项目一',
-            img: 'cover1',
-            pics: {
-              mobile: [
-                {
-                  id: '8d12c0e8-e6ab-55ac-9692-a993757e63b7',
-                  pic: 'rm0'
-                },
-                {
-                  id: '9d12c0e8-e6ab-55ac-9692-a993757e63b7',
-                  pic: 'rm1'
-                },
-                {
-                  id: '1d12c0e8-e6ab-55ac-9692-a993757e63b7',
-                  pic: 'rm0'
-                },
-                {
-                  id: '5818d3be-49e4-5ff6-9b78-858d5cd267a6',
-                  pic: 'rm1'
-                },
-                {
-                  id: '909dd909-cc8b-50f3-815d-8c65b0f61fe4',
-                  pic: 'rm0'
-                },
-                {
-                  id: '909dd979-cc8b-50f3-815d-8c65b0f61fe4',
-                  pic: 'rm1'
-                }
-              ],
-              pc: [
-                {
-                  id: '3b35498f-f876-546a-a218-37080d25e611',
-                  pic: 'r0'
-                },
-                {
-                  id: '3b85498f-f876-546a-a218-37080d25e611',
-                  pic: 'r1'
-                },
-                {
-                  id: '4b35498f-f876-546a-a218-37080d25e611',
-                  pic: 'r0'
-                },
-                {
-                  id: '5b35498f-f876-546a-a218-37080d25e611',
-                  pic: 'r1'
-                },
-                {
-                  id: '6b35498f-f876-546a-a218-37080d25e611',
-                  pic: 'r0'
-                },
-                {
-                  id: '6b36498f-f876-546a-a218-37080d25e611',
-                  pic: 'r1'
-                }
-              ]
-            },
-            info: {
-              demo: 'http://eeewl1250.gitee.io/resume/',
-              github: 'https://github.com/eeewl1250/resume'
-            }
-          },
-          {
-            title: '这是项目二二二二',
-            img: 'cover2',
-            pics: {
-              pc: [
-                {
-                  id: '3b35498f-f876-546a-a218-37080d25e611',
-                  pic: 'r0'
-                },
-                {
-                  id: '0f20edd8-4776-5d33-8d1f-78b91b551e29',
-                  pic: 'r1'
-                },
-                {
-                  id: 'b6cd74b0-f1ee-53fa-a54f-be408ec6e7d3',
-                  pic: 'r0'
-                }
-              ]
-            },
-            info: {
-              demo: 'http://eeewl1250.gitee.io/resume/',
-              github: 'https://github.com/eeewl1250/resume'
-            }
-          },
-          {
-            title: '项目三在此',
-            img: 'cover3',
-            pics: {
-              mobile: [
-                {
-                  id: '8d12c0e8-e6ab-55ac-9692-a993757e63b7',
-                  pic: 'rm0'
-                },
-                {
-                  id: '5818d3be-49e4-5ff6-9b78-858d5cd267a6',
-                  pic: 'rm1'
-                },
-                {
-                  id: '909dd909-cc8b-50f3-815d-8c65b0f61fe4',
-                  pic: 'rm0'
-                },
-                {
-                  id: 'cfcd5e9a-d561-5cd5-a825-7380613dfbc4',
-                  pic: 'rm1'
-                }
-              ]
-            },
-            info: {
-              demo: 'http://eeewl1250.gitee.io/resume/',
-              github: 'https://github.com/eeewl1250/resume'
-            }
           }
         ],
         demo: [
